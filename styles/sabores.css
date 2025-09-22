@@ -1,0 +1,47 @@
+#sabores{
+    display: flex;
+    flex-direction: column;
+    height: 50em;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#sabores h2{
+    text-align: center;
+    font-size: 8vh;
+    
+}
+#sabores img{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+}
+#pizzas{
+    position: relative;
+    display: flex;
+    display: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.anima{
+    display: none;
+}
+button{
+    width: 25vh;
+    height: 8vh;
+    border: none;
+    border-radius: 10px;
+    background-color: #422E2F;
+    color: white;
+    font-size: 2vh;
+}
+button:hover{
+    cursor: pointer; 
+    background-color: #281d1d;
+}
