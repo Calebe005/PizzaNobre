@@ -31,7 +31,24 @@
 }
 .anima{
     display: none;
+    height: 100%;
+    width: 0%;
 }
+.textoAnima{
+    color: white;
+    font-size: 10vh;
+    text-align: center;
+    writing-mode: vertical-lr;
+}
+#anima01, #anima03, #anima05{
+    background-color: #97373B;
+}
+#anima02, #anima04{
+    background-color: #6D3A3C;
+}
+
+
+
 button{
     width: 25vh;
     height: 8vh;
