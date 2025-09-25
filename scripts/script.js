@@ -2,54 +2,67 @@
 let divAnima = []; // Obtendo conteiner de animação
 let imgSabores = []; // Imagens de sabores;
 let tempoAnima = "2s"; // Duração das animações;
+let elementoPizza = [];
 
 // Atribuindo elementos a listas
 for(let i = 1; i<=5;i++){
     divAnima.push(document.getElementById("anima0"+i));
     imgSabores.push(document.getElementById("Pizza0"+i));
+    elementoPizza.push(document.getElementById("elementoPizza0"+i));
 }
+
+function abrirElementos(i){
+    
+}
+
 // Alterando tamanho de cada img e div quando  img é hoverada;
 imgSabores.forEach((e,i)=>{
 
-    e.addEventListener("mouseover",()=>{
-        // Verifica se ja tem uma imagem hoverada
-        divAnima.forEach((div)=>{
-            if(div.style.width != "0%"){
-                div.style.width = "0%";
-                div.style.transition = tempoAnima;
+    
+    e.addEventListener("mouseover",(event)=>{
+
+        // Verificando se não tem outra img aberta
+        divAnima.forEach((e)=>{
+            if(e.style.width != "0%"){
+                e.style.width = "0%"
+                e.style.transition = tempoAnima;
             }
         });
-        
-        // Muda o  tamanho do contênier das respectiva imagem;
-        (divAnima[i]).style.display = "flex";
-        (divAnima[i]).style.width = "10%"; // ou 20%
-        (divAnima[i]).style.height = "100%";
-        (divAnima[i]).style.transition = tempoAnima;
-        
-        //Atribuindo valores a largura das imagens
-        imgSabores.forEach((el)=>{
-            if(e==el){ // Se for a primeira imagem;
-                el.style.width = "10%"; // ou 20%
-            }else{
-                el.style.width = "20%"; // ou 15%
+        imgSabores.forEach((e)=>{
+            if(e.style.width != "100%"){
+                e.style.width = "100%"
+                e.style.transition = tempoAnima;
             }
-            el.style.transition = tempoAnima;
         });
-        
+        elementoPizza.forEach((e)=>{
+            if(e.style.width != "20%"){
+                e.style.width = "20%"
+                e.style.transition = tempoAnima;
+            }
+        });
+
+        // Abrindo animação
+        elementoPizza[i].style.width = "40%";
+        elementoPizza[i].style.transition = tempoAnima;
+        imgSabores[i].style.width = "50%";
+        imgSabores[i].style.transition = tempoAnima;
+        divAnima[i].style.display = "flex";
+        divAnima[i].style.width = "50%";
+        divAnima[i].style.transition = tempoAnima;
     });
 });
 
 // Fechando as imagens e div's quando o mouse sai
-imgSabores.forEach((e)=>{
+elementoPizza.forEach((e)=>{
     e.addEventListener("mouseleave",()=>{
-        imgSabores.forEach((img,i)=>{
+        imgSabores.forEach((img)=>{
+            img.style.width = "100%";
+        });
+        divAnima.forEach((div)=>{
+            div.style.width = "0%";
+        });
+        elementoPizza.forEach((img)=>{
             img.style.width = "20%";
-            if((divAnima[i]).style.width != "0%"){
-                (divAnima[i]).style.width = "0%";
-                (divAnima[i]).style.transition = "1s";
-                
-            }
-            
         });
     });
 
