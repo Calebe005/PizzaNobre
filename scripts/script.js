@@ -11,10 +11,6 @@ for(let i = 1; i<=5;i++){
     elementoPizza.push(document.getElementById("elementoPizza0"+i));
 }
 
-function abrirElementos(i){
-    
-}
-
 // Alterando tamanho de cada img e div quando  img é hoverada;
 imgSabores.forEach((e,i)=>{
 
@@ -34,16 +30,9 @@ imgSabores.forEach((e,i)=>{
                 e.style.transition = tempoAnima;
             }
         });
-        elementoPizza.forEach((e)=>{
-            if(e.style.width != "20%"){
-                e.style.width = "20%"
-                e.style.transition = tempoAnima;
-            }
-        });
+        
 
         // Abrindo animação
-        elementoPizza[i].style.width = "40%";
-        elementoPizza[i].style.transition = tempoAnima;
         imgSabores[i].style.width = "50%";
         imgSabores[i].style.transition = tempoAnima;
         divAnima[i].style.display = "flex";
@@ -60,9 +49,6 @@ elementoPizza.forEach((e)=>{
         });
         divAnima.forEach((div)=>{
             div.style.width = "0%";
-        });
-        elementoPizza.forEach((img)=>{
-            img.style.width = "20%";
         });
     });
 
