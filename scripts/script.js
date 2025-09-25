@@ -35,7 +35,6 @@ imgSabores.forEach((e,i)=>{
         // Abrindo animação
         imgSabores[i].style.width = "50%";
         imgSabores[i].style.transition = tempoAnima;
-        divAnima[i].style.display = "flex";
         divAnima[i].style.width = "50%";
         divAnima[i].style.transition = tempoAnima;
     });

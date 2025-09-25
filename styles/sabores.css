@@ -30,7 +30,7 @@
     border-radius: 10px;
 }
 .anima{
-    display: none;
+    display: flex;
     height: 100%;
     width: 0%;
 }
