@@ -1,0 +1,34 @@
+#sobreNos{
+    background-image: url(../Img/sobreNos.png);
+    background-size: cover;
+    background-position: auto;
+    backface-visibility: visible;
+    width: 100%;
+    height: 50em;
+    color: white;
+    justify-content: center;
+    align-content:center;
+    text-align: right;
+}
+#sobreNos h2{
+    font-size: 4em;
+    margin-right: 5%;
+    padding: 0.5em 0px;
+}
+#sobreNos p{
+    margin-top: 2%;
+    margin-right: 5%;
+    text-align: justify;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.767);
+    width: 30em;
+    font-size: 1.5em;
+    text-indent: 4em;
+}
+#sobreNos .separador{
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 1px;
+    right: 5%;
+}

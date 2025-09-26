@@ -50,12 +50,9 @@
 #anima02, #anima04{
     background-color: #6D3A3C;
 }
-
-
-
 button{
     width: 25vh;
-    height: 8vh;
+    height: 6vh;
     border: none;
     border-radius: 10px;
     background-color: #422E2F;
@@ -68,10 +65,11 @@ button:hover{
 }
 .visivel{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
     transition: 0.8s ease-out
 }
 .invi{
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateX(100px);
+    transition: 0.8s ease-out
 }

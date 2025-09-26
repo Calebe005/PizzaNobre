@@ -64,7 +64,7 @@ const observer = new IntersectionObserver((obj)=>{
             e.target.className = "invi";
         }
     }); 
-}, {threshold: 0.7
+}, {threshold: 0.3
 
 });
 const elemento = document.getElementById("sabores");

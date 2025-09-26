@@ -76,14 +76,14 @@ body{
     color: rgba(255, 255, 255, 0.534);
     cursor: pointer;
 }
-.separador{
+#cabecalho .separador{
     position: absolute;
     width: 90%;
     display: inline-block;
-    height: 1px;
+    height: 2px;
     left: 5%;
     bottom: 0px;
-    background-color: rgba(255, 255, 255, 0.363);
+    background-color: rgba(255, 255, 255, 0.539);
 }
 #conteudoPrincipal{
     position: relative;
@@ -92,11 +92,10 @@ body{
 #boasVindas{
     background-image: url(../Img/pizzaFOrno\ 1.png);
     position: relative;
-    height: 50em;
+    height: 60rem;
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 40%;
+    background-position: center;
     justify-items: center;
     align-content: center;
 }
