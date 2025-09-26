@@ -96,6 +96,7 @@ body{
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 40%;
     justify-items: center;
     align-content: center;
 }

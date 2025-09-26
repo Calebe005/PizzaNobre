@@ -9,7 +9,6 @@
 #sabores h2{
     text-align: center;
     font-size: 8vh;
-    
 }
 #sabores img{
     position: relative;
@@ -66,4 +65,13 @@ button{
 button:hover{
     cursor: pointer; 
     background-color: #281d1d;
+}
+.visivel{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.8s ease-out
+}
+.invi{
+    opacity: 0;
+    transform: translateY(100px);
 }

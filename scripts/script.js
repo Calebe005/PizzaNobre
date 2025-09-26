@@ -1,7 +1,7 @@
 // Animação dos Sabores
 let divAnima = []; // Obtendo conteiner de animação
 let imgSabores = []; // Imagens de sabores;
-let tempoAnima = "2s"; // Duração das animações;
+let tempoAnima = "0.8s ease-out"; // Duração das animações;
 let elementoPizza = [];
 
 // Atribuindo elementos a listas
@@ -52,3 +52,23 @@ elementoPizza.forEach((e)=>{
     });
 
 });
+
+// Animação de chegada da section sabores;
+const observer = new IntersectionObserver((obj)=>{
+    obj.forEach((e)=>{
+        
+        if(e.isIntersecting){
+            console.log(e.target);
+            e.target.className = "visivel";
+        }else{
+            e.target.className = "invi";
+        }
+    }); 
+}, {threshold: 0.7
+
+});
+const elemento = document.getElementById("sabores");
+observer.observe(elemento);
+
+
+
