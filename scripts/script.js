@@ -71,4 +71,3 @@ const elemento = document.getElementById("sabores");
 observer.observe(elemento);
 
 
-

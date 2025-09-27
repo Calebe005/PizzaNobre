@@ -1,0 +1,59 @@
+#Rodape{
+    background-color: black;
+    background-image: url(../Img/Pattern.png);
+    background-size: cover;
+    display: flex;
+    padding: 5em;
+    justify-content: space-between;
+
+
+    width: 100%;
+    height: 20em;
+    color: white;
+}
+#Rodape img{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+#copy{
+    width: 100%;
+    height: 5em;
+    background-color: #422E2F;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#esquerda{
+    height:100%;
+}
+#esquerda ul{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#direita{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#direita h3{
+    font-size: 2em;
+    font-weight: lighter;
+}
+#instagram{
+    display: flex;
+    width: 11em;
+    justify-content: space-between;
+    align-items: center;
+}
